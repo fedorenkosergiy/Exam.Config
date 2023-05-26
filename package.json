@@ -1,0 +1,18 @@
+{
+  "name": "fedorenkosergiy.exam.config",
+  "version": "0.0.0",
+  "displayName": "Exam config",
+  "description": "Class that contains all the static configurations of an exam project",
+  "unity": "2020.3",
+  "unityRelease": "23f1",
+  "keywords": [
+    "Exam",
+    "Config",
+    "UnityEngine"
+  ],
+  "author": {
+    "name": "Serhii Fedorenko",
+    "email": "fedorenkosergiy@gmail.com",
+    "url": "https://example.com"
+  }
+}
