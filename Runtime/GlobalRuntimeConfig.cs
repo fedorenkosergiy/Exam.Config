@@ -1,33 +1,53 @@
-using UnityEngine;
-
 namespace Exam.Config
 {
-	[CreateAssetMenu(fileName = nameof(GlobalRuntimeConfig) + Grabli.Abstraction.Constant.FileExtension.Asset,
-					 menuName = Constant.MenuPrefix + nameof(GlobalRuntimeConfig))]
-	public class GlobalRuntimeConfig : ScriptableObject
+	public interface GlobalRuntimeConfig
 	{
-		[Header("Google Play Market")]
-		[SerializeField]
-		private string applicationBundleIdForGooglePlayMarket;
+		string AndroidDevBannerAdsId { get; }
 
-		[Header("Apple App Store")]
-		[SerializeField]
-		private string applicationBundleIdForAppleAppStore;
-		[SerializeField] private string appleItunesAppId;
+		string AndroidDevInterstitialAdsId { get; }
 
-		[Header("Admob")][SerializeField] private string androidDevBannerAdsId;
-		[SerializeField] private string androidDevInterstitialAdsId;
-		[SerializeField] private string androidDevRewardAdsId;
+		string AndroidDevRewardAdsId { get; }
 
-		[SerializeField] private string androidProdBannerIdInsteadOfQuestionImage;
-		[SerializeField] private string androidProdBannerIdOnHelpScreen;
-		[SerializeField] private string androidProdBannerIdOnTestsPanel;
-		[SerializeField] private string androidProdInterstitialIdAfterSponsoredTest;
-		[SerializeField] private string androidProdInterstitialIdBeforeSponsoredTest;
-		[SerializeField] private string androidProdRewardAdsIdContinueSprint;
+		string AndroidProdBannerIdInsteadOfQuestionImage { get; }
 
-		[SerializeField] private string iosDevBannerAdsId;
+		string AndroidProdBannerIdOnHelpScreen { get; }
 
-		[SerializeField] private string sprintAdsRewardName;
+		string AndroidProdBannerIdOnTestsPanel { get; }
+
+		string AndroidProdInterstitialIdAfterSponsoredTest { get; }
+
+		string AndroidProdInterstitialIdBeforeSponsoredTest { get; }
+
+		string AndroidProdRewardAdsIdContinueSprint { get; }
+
+		string IosDevBannerAdsId { get; }
+
+		string IosDevInterstitialAdsId { get; }
+
+		string IosDevRewardAdsId { get; }
+
+		string IosProdBannerIdInsteadOfQuestionImage { get; }
+
+		string IosProdBannerIdOnHelpScreen { get; }
+
+		string IosProdBannerIdOnTestsPanel { get; }
+
+		string IosProdInterstitialIdAfterSponsoredTest { get; }
+
+		string IosProdInterstitialIdBeforeSponsoredTest { get; }
+
+		string IosProdRewardAdsIdContinueSprint { get; }
+
+		string SprintAdsRewardName { get; }
+
+		int DaySwitchHoursOffset { get; }
+
+		int QuestionsPerSprint { get; }
+
+		long SprintTimePerQuestionTicks { get; }
+
+		int SprintMistakesToFail { get; }
+
+		int SprintTimeToViewCorrectAnswerMs { get; }
 	}
 }
