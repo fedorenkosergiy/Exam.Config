@@ -49,5 +49,9 @@ namespace Exam.Config
 		int SprintMistakesToFail { get; }
 
 		int SprintTimeToViewCorrectAnswerMs { get; }
+
+		int MaxQuestionsPerTest { get; }
+
+		string FallbackLanguage { get; }
 	}
 }

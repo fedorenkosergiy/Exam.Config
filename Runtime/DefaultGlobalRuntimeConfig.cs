@@ -54,6 +54,9 @@ namespace Exam.Config
 		[SerializeField] private int sprintMistakesToFail = 3;
 		[SerializeField] private int sprintTimeToViewCorrectAnswerMs = 500;
 
+		[Header("Database")][SerializeField] private int maxQuestionsPerTest = 20;
+		[SerializeField] private string fallbackLanguage = Constant.Ukrainian;
+
 		public string AndroidDevBannerAdsId => androidDevBannerAdsId;
 
 		public string AndroidDevInterstitialAdsId => androidDevInterstitialAdsId;
@@ -101,5 +104,9 @@ namespace Exam.Config
 		public int SprintMistakesToFail => sprintMistakesToFail;
 
 		public int SprintTimeToViewCorrectAnswerMs => sprintTimeToViewCorrectAnswerMs;
+
+		public int MaxQuestionsPerTest => maxQuestionsPerTest;
+
+		public string FallbackLanguage => fallbackLanguage;
 	}
 }
