@@ -57,6 +57,25 @@ namespace Exam.Config
 		[Header("Database")][SerializeField] private int maxQuestionsPerTest = 20;
 		[SerializeField] private string fallbackLanguage = Constant.Ukrainian;
 
+		[Header("Local notifications common")]
+		[SerializeField]
+		private int recommendedQuestionsPerDay = 60;
+		[SerializeField] private int minHourForNotificationWeekDay = 9;
+		[SerializeField] private int maxHourForNotificationWeekDay = 20;
+		[SerializeField] private int minHourForNotificationWeekEnd = 11;
+		[SerializeField] private int maxHourForNotificationWeekEnd = 21;
+		[SerializeField] private int daySwitchHourOfD1Notifications = 3;
+
+		[Header("Local notifications android")]
+		[SerializeField]
+		private string generalNotificationsChannelId = nameof(GeneralNotificationsChannelId);
+		[SerializeField] private int d1ReminderNotificationId = 1;
+		[SerializeField] private int d5ReminderNotificationId = 2;
+		[SerializeField] private string d1NotificationLargeIcon = "app_icon";
+		[SerializeField] private string d1NotificationSmallIcon = "app_icon";
+		[SerializeField] private string d5NotificationLargeIcon = "app_icon";
+		[SerializeField] private string d5NotificationSmallIcon = "app_icon";
+
 		public string AndroidDevBannerAdsId => androidDevBannerAdsId;
 
 		public string AndroidDevInterstitialAdsId => androidDevInterstitialAdsId;
@@ -108,5 +127,31 @@ namespace Exam.Config
 		public int MaxQuestionsPerTest => maxQuestionsPerTest;
 
 		public string FallbackLanguage => fallbackLanguage;
+
+		public int RecommendedQuestionsPerDay => recommendedQuestionsPerDay;
+
+		public int MinHourForNotificationWeekDay => minHourForNotificationWeekDay;
+
+		public int MaxHourForNotificationWeekDay => maxHourForNotificationWeekDay;
+
+		public int MinHourForNotificationWeekEnd => minHourForNotificationWeekEnd;
+
+		public int MaxHourForNotificationWeekEnd => maxHourForNotificationWeekEnd;
+
+		public int DaySwitchHourOfD1Notifications => daySwitchHourOfD1Notifications;
+
+		public string GeneralNotificationsChannelId => generalNotificationsChannelId;
+
+		public int D1ReminderNotificationId => d1ReminderNotificationId;
+
+		public int D5ReminderNotificationId => d5ReminderNotificationId;
+
+		public string D1NotificationLargeIcon => d1NotificationLargeIcon;
+
+		public string D1NotificationSmallIcon => d1NotificationSmallIcon;
+
+		public string D5NotificationLargeIcon => d5NotificationLargeIcon;
+
+		public string D5NotificationSmallIcon => d5NotificationSmallIcon;
 	}
 }

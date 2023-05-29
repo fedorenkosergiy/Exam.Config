@@ -53,5 +53,31 @@ namespace Exam.Config
 		int MaxQuestionsPerTest { get; }
 
 		string FallbackLanguage { get; }
+
+		int RecommendedQuestionsPerDay { get; }
+
+		int MinHourForNotificationWeekDay { get; }
+
+		int MaxHourForNotificationWeekDay { get; }
+
+		int MinHourForNotificationWeekEnd { get; }
+
+		int MaxHourForNotificationWeekEnd { get; }
+
+		int DaySwitchHourOfD1Notifications { get; }
+
+		string GeneralNotificationsChannelId { get; }
+
+		int D1ReminderNotificationId { get; }
+
+		int D5ReminderNotificationId { get; }
+
+		string D1NotificationLargeIcon { get; }
+
+		string D1NotificationSmallIcon { get; }
+
+		string D5NotificationLargeIcon { get; }
+
+		string D5NotificationSmallIcon { get; }
 	}
 }
