@@ -79,5 +79,7 @@ namespace Exam.Config
 		string D5NotificationLargeIcon { get; }
 
 		string D5NotificationSmallIcon { get; }
+
+		string DatabaseAddress { get; }
 	}
 }
