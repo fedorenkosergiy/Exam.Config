@@ -7,5 +7,9 @@ namespace Exam.Config.Editor
 		string DatabaseAssetGuid { get; }
 
 		string DatabaseDefaultAssetPath { get; }
+		
+		string RawDatabaseAssetGuid { get; }
+		
+		string RawDatabaseDefaultAssetPath { get; }
 	}
 }
