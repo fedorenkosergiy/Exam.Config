@@ -18,7 +18,7 @@ namespace Exam.Config.Editor
 		public string DatabaseAssetGuid => databaseAssetGuid;
 
 		public string DatabaseDefaultAssetPath => databaseDefaultAssetPath;
-		
+
 		public string RawDatabaseAssetGuid => rawDatabaseAssetGuid;
 
 		public string RawDatabaseDefaultAssetPath => rawDatabaseDefaultAssetPath;

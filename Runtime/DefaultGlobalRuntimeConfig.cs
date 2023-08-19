@@ -76,6 +76,8 @@ namespace Exam.Config
 		[SerializeField] private string d5NotificationLargeIcon = "app_icon";
 		[SerializeField] private string d5NotificationSmallIcon = "app_icon";
 
+		[Header("Database")][SerializeField] private string databaseAddress = "database";
+
 		public string AndroidDevBannerAdsId => androidDevBannerAdsId;
 
 		public string AndroidDevInterstitialAdsId => androidDevInterstitialAdsId;
@@ -153,5 +155,7 @@ namespace Exam.Config
 		public string D5NotificationLargeIcon => d5NotificationLargeIcon;
 
 		public string D5NotificationSmallIcon => d5NotificationSmallIcon;
+
+		public string DatabaseAddress => databaseAddress;
 	}
 }
