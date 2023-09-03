@@ -78,6 +78,8 @@ namespace Exam.Config
 
 		[Header("Database")][SerializeField] private string databaseAddress = "database";
 
+		[Header("Misc")][SerializeField] private string defaultPrivacyPolicyRichTextAddress = "privacy_policy_uk.txt";
+
 		public string AndroidDevBannerAdsId => androidDevBannerAdsId;
 
 		public string AndroidDevInterstitialAdsId => androidDevInterstitialAdsId;
@@ -157,5 +159,7 @@ namespace Exam.Config
 		public string D5NotificationSmallIcon => d5NotificationSmallIcon;
 
 		public string DatabaseAddress => databaseAddress;
+
+		public string DefaultPrivacyPolicyRichTextAddress => defaultPrivacyPolicyRichTextAddress;
 	}
 }

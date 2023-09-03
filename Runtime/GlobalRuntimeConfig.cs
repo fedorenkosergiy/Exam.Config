@@ -81,5 +81,7 @@ namespace Exam.Config
 		string D5NotificationSmallIcon { get; }
 
 		string DatabaseAddress { get; }
+
+		string DefaultPrivacyPolicyRichTextAddress { get; }
 	}
 }
