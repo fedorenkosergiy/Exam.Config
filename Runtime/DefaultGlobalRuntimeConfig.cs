@@ -78,6 +78,11 @@ namespace Exam.Config
 
 		[Header("Database")][SerializeField] private string databaseAddress = "database";
 
+		[Header("UI")][SerializeField] private string uiLearnedLabel = "ui/stat-learned";
+		[SerializeField] private string uiTrainedLabel = "ui/stat-trained";
+		[SerializeField] private string uiRegularRightLabel = "ui/stat-regular-right";
+		[SerializeField] private string uiRegularWrongLabel = "ui/stat-regular-wrong";
+
 		[Header("Misc")][SerializeField] private string defaultPrivacyPolicyRichTextAddress = "privacy_policy_uk.txt";
 
 		public string AndroidDevBannerAdsId => androidDevBannerAdsId;
@@ -159,6 +164,14 @@ namespace Exam.Config
 		public string D5NotificationSmallIcon => d5NotificationSmallIcon;
 
 		public string DatabaseAddress => databaseAddress;
+
+		public string UiLearnedLabel => uiLearnedLabel;
+
+		public string UiTrainedLabel => uiTrainedLabel;
+
+		public string UiRegularRightLabel => uiRegularRightLabel;
+
+		public string UiRegularWrongLabel => uiRegularWrongLabel;
 
 		public string DefaultPrivacyPolicyRichTextAddress => defaultPrivacyPolicyRichTextAddress;
 	}

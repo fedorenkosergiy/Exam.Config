@@ -82,6 +82,14 @@ namespace Exam.Config
 
 		string DatabaseAddress { get; }
 
+		string UiLearnedLabel { get; }
+
+		string UiTrainedLabel { get; }
+
+		string UiRegularRightLabel { get; }
+
+		string UiRegularWrongLabel { get; }
+
 		string DefaultPrivacyPolicyRichTextAddress { get; }
 	}
 }
