@@ -82,17 +82,23 @@ namespace Exam.Config
 
 		string GeneralNotificationsChannelId { get; }
 
-		int D1ReminderNotificationId { get; }
+		int AndroidD1ReminderNotificationId { get; }
 
-		int D5ReminderNotificationId { get; }
+		int AndroidD5ReminderNotificationId { get; }
 
-		string D1NotificationLargeIcon { get; }
+		string AndroidD1NotificationLargeIcon { get; }
 
-		string D1NotificationSmallIcon { get; }
+		string AndroidD1NotificationSmallIcon { get; }
 
-		string D5NotificationLargeIcon { get; }
+		string AndroidD5NotificationLargeIcon { get; }
 
-		string D5NotificationSmallIcon { get; }
+		string AndroidD5NotificationSmallIcon { get; }
+
+		string IosD1ReminderNotificationId { get; }
+
+		string IosD5ReminderNotificationId { get; }
+
+		string IosDailyRemindersCategoryId { get; }
 
 		string DatabaseAddress { get; }
 

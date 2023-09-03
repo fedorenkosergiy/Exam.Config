@@ -76,12 +76,18 @@ namespace Exam.Config
 		[Header("Local notifications android")]
 		[SerializeField]
 		private string generalNotificationsChannelId = nameof(GeneralNotificationsChannelId);
-		[SerializeField] private int d1ReminderNotificationId = 1;
-		[SerializeField] private int d5ReminderNotificationId = 2;
-		[SerializeField] private string d1NotificationLargeIcon = "app_icon";
-		[SerializeField] private string d1NotificationSmallIcon = "app_icon";
-		[SerializeField] private string d5NotificationLargeIcon = "app_icon";
-		[SerializeField] private string d5NotificationSmallIcon = "app_icon";
+		[SerializeField] private int androidD1ReminderNotificationId = 1;
+		[SerializeField] private int androidD5ReminderNotificationId = 2;
+		[SerializeField] private string androidD1NotificationLargeIcon = "app_icon";
+		[SerializeField] private string androidAndroidD1NotificationSmallIcon = "app_icon";
+		[SerializeField] private string androidAndroidD5NotificationLargeIcon = "app_icon";
+		[SerializeField] private string androidAndroidD5NotificationSmallIcon = "app_icon";
+
+		[Header("Local notifications iOS")]
+		[SerializeField]
+		private string iosD1ReminderNotificationId = "D1ReminderNotificationId";
+		[SerializeField] private string iosD5ReminderNotificationId = "D5ReminderNotificationId";
+		[SerializeField] private string iosDailyRemindersCategoryId = "DailyRemindersCategoryId";
 
 		[Header("Database")][SerializeField] private string databaseAddress = "database";
 
@@ -171,17 +177,23 @@ namespace Exam.Config
 
 		public string GeneralNotificationsChannelId => generalNotificationsChannelId;
 
-		public int D1ReminderNotificationId => d1ReminderNotificationId;
+		public int AndroidD1ReminderNotificationId => androidD1ReminderNotificationId;
 
-		public int D5ReminderNotificationId => d5ReminderNotificationId;
+		public int AndroidD5ReminderNotificationId => androidD5ReminderNotificationId;
 
-		public string D1NotificationLargeIcon => d1NotificationLargeIcon;
+		public string AndroidD1NotificationLargeIcon => androidD1NotificationLargeIcon;
 
-		public string D1NotificationSmallIcon => d1NotificationSmallIcon;
+		public string AndroidD1NotificationSmallIcon => androidAndroidD1NotificationSmallIcon;
 
-		public string D5NotificationLargeIcon => d5NotificationLargeIcon;
+		public string AndroidD5NotificationLargeIcon => androidAndroidD5NotificationLargeIcon;
 
-		public string D5NotificationSmallIcon => d5NotificationSmallIcon;
+		public string AndroidD5NotificationSmallIcon => androidAndroidD5NotificationSmallIcon;
+
+		public string IosD1ReminderNotificationId => iosD1ReminderNotificationId;
+
+		public string IosD5ReminderNotificationId => iosD5ReminderNotificationId;
+
+		public string IosDailyRemindersCategoryId => iosDailyRemindersCategoryId;
 
 		public string DatabaseAddress => databaseAddress;
 
