@@ -49,6 +49,9 @@ namespace Exam.Config
 		[SerializeField] private string iosProdRewardAdsIdContinueSprint;
 
 		[Header("Admob other")][SerializeField] private string editorTestDeviceConditionName = "IsEditorTestDevice";
+		[SerializeField] private Vector2Int standardBannerSize = new Vector2Int(320, 50);
+		[SerializeField] private float standardBannerThresholdScreenWidthInches = 2.05f;
+		[SerializeField] private float rewardedAdLoadingTimeout = 3.0f;
 		[SerializeField] private string sprintAdsRewardName;
 
 
@@ -131,6 +134,12 @@ namespace Exam.Config
 		public string IosProdRewardAdsIdContinueSprint => iosProdRewardAdsIdContinueSprint;
 
 		public string EditorTestDeviceConditionName => editorTestDeviceConditionName;
+
+		public Vector2Int StandardBannerSize => standardBannerSize;
+
+		public float StandardBannerThresholdScreenWidthInches => standardBannerThresholdScreenWidthInches;
+
+		public float RewardedAdLoadingTimeout => rewardedAdLoadingTimeout;
 
 		public string SprintAdsRewardName => sprintAdsRewardName;
 

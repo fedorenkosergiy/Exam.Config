@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Exam.Config
 {
 	public interface GlobalRuntimeConfig
@@ -43,6 +45,12 @@ namespace Exam.Config
 		string IosProdRewardAdsIdContinueSprint { get; }
 
 		string EditorTestDeviceConditionName { get; }
+
+		Vector2Int StandardBannerSize { get; }
+
+		float StandardBannerThresholdScreenWidthInches { get; }
+
+		float RewardedAdLoadingTimeout { get; }
 
 		string SprintAdsRewardName { get; }
 
