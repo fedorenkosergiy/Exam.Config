@@ -2,6 +2,8 @@ namespace Exam.Config
 {
 	public interface GlobalRuntimeConfig
 	{
+		string AndroidTestDeviceConditionName { get; }
+
 		string AndroidDevBannerAdsId { get; }
 
 		string AndroidDevInterstitialAdsId { get; }
@@ -20,6 +22,8 @@ namespace Exam.Config
 
 		string AndroidProdRewardAdsIdContinueSprint { get; }
 
+		string IosTestDeviceConditionName { get; }
+
 		string IosDevBannerAdsId { get; }
 
 		string IosDevInterstitialAdsId { get; }
@@ -37,6 +41,8 @@ namespace Exam.Config
 		string IosProdInterstitialIdBeforeSponsoredTest { get; }
 
 		string IosProdRewardAdsIdContinueSprint { get; }
+
+		string EditorTestDeviceConditionName { get; }
 
 		string SprintAdsRewardName { get; }
 

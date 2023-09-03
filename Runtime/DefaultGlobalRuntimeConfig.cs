@@ -18,7 +18,8 @@ namespace Exam.Config
 
 		[Header("Admob android dev")]
 		[SerializeField]
-		private string androidDevBannerAdsId;
+		private string androidTestDeviceConditionName = "IsAndroidTestDevice";
+		[SerializeField] private string androidDevBannerAdsId;
 		[SerializeField] private string androidDevInterstitialAdsId;
 		[SerializeField] private string androidDevRewardAdsId;
 
@@ -33,7 +34,8 @@ namespace Exam.Config
 
 		[Header("Admob iOS dev")]
 		[SerializeField]
-		private string iosDevBannerAdsId;
+		private string iosTestDeviceConditionName = "IsIosTestDevice";
+		[SerializeField] private string iosDevBannerAdsId;
 		[SerializeField] private string iosDevInterstitialAdsId;
 		[SerializeField] private string iosDevRewardAdsId;
 
@@ -46,7 +48,9 @@ namespace Exam.Config
 		[SerializeField] private string iosProdInterstitialIdBeforeSponsoredTest;
 		[SerializeField] private string iosProdRewardAdsIdContinueSprint;
 
-		[Header("Admob other")][SerializeField] private string sprintAdsRewardName;
+		[Header("Admob other")][SerializeField] private string editorTestDeviceConditionName = "IsEditorTestDevice";
+		[SerializeField] private string sprintAdsRewardName;
+
 
 		[Header("Sprint mode")][SerializeField] private int daySwitchHoursOffset = -3;
 		[SerializeField] private int questionsPerSprint = 100;
@@ -85,6 +89,9 @@ namespace Exam.Config
 
 		[Header("Misc")][SerializeField] private string defaultPrivacyPolicyRichTextAddress = "privacy_policy_uk.txt";
 
+
+		public string AndroidTestDeviceConditionName => androidTestDeviceConditionName;
+
 		public string AndroidDevBannerAdsId => androidDevBannerAdsId;
 
 		public string AndroidDevInterstitialAdsId => androidDevInterstitialAdsId;
@@ -103,6 +110,8 @@ namespace Exam.Config
 
 		public string AndroidProdRewardAdsIdContinueSprint => androidProdRewardAdsIdContinueSprint;
 
+		public string IosTestDeviceConditionName => iosTestDeviceConditionName;
+
 		public string IosDevBannerAdsId => iosDevBannerAdsId;
 
 		public string IosDevInterstitialAdsId => iosDevInterstitialAdsId;
@@ -120,6 +129,8 @@ namespace Exam.Config
 		public string IosProdInterstitialIdBeforeSponsoredTest => iosProdInterstitialIdBeforeSponsoredTest;
 
 		public string IosProdRewardAdsIdContinueSprint => iosProdRewardAdsIdContinueSprint;
+
+		public string EditorTestDeviceConditionName => editorTestDeviceConditionName;
 
 		public string SprintAdsRewardName => sprintAdsRewardName;
 
